@@ -1,0 +1,185 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  text-transform: capitalize;
+  font-family: serif;
+}
+
+
+section{
+  padding: 2rem 8%;
+}
+
+span{
+ color: #eb3b5a;
+ font-weight: bold;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2a3441;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 8%;
+}
+.name{
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.name:hover{
+  text-shadow: 5px 3px 8px #fc5c65;
+  font-weight: bolder;
+}
+
+.navbar{
+  display: flex;
+}
+.navbar a{
+  color: #fff;
+  position: relative;
+  font-size: 1.2rem;
+  margin: 10px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.navbar a::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  position: absolute;
+  background: #eb3e09;
+  display:block;
+  /* padding: 5px; */
+  /* margin: 5px; */
+  transition: ease .40s;
+
+}
+
+.navbar a:hover::after{
+  width: 100%;
+}
+
+.header-btn a{
+  color: #0a0808;
+  background-color: #f1eaea;
+  padding:8px 15px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: .9s;
+}
+
+.header-btn a:hover{
+  background-color: #0d70f3;
+  color: white;
+}
+
+
+/* home  */
+
+.home-page{
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+.home-img{
+  width: 400px;
+  height: 400px;
+}
+.home-img img{
+  width: 100%;
+  /* height: 100%; */
+  border-radius:0 50% ;
+}
+
+.home-text{
+ width: 100%;
+}
+
+.home-text h4{
+  font-weight: bold;
+}
+
+.home-text h1{
+  font-size: 1.9rem;
+  gap: 1rem;
+  font-weight: bolder;
+}
+.home-text p{
+  margin-top: 10px;
+  gap: 1rem;
+  font-size: 15px;
+  letter-spacing: .6px;
+  color: #0a0808;
+  max-width: 600px;
+}
+.home-btn button{
+  margin: 10px 5px 5px ;
+  padding: 10px 22px;
+  background-color: #fc5c65;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 17px;
+}
+
+.home-btn .dark-color{
+  background-color: black;
+}
+.dark-color:hover{
+  background-color: #8e44ad;
+}
+.ex:hover{
+  background-color: #1abc9c;
+}
+
+
+
+
+
+
+
+@media (max-width:920px) {
+    .header{
+      padding: 2rem 0;
+      transition: .5s;
+    }
+}
+
+@media (max-width:800px){
+  .navbar{
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    border-top: 1px solid #ee1313;
+    background-color: #1abc9c;
+    color: #0a0808;
+  }
+  .navbar a{
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1rem solid black;
+    border-left: .5rem solid ;
+    background-color: aqua;
+    flex-direction: column;
+  }
+}
